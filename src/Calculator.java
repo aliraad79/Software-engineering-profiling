@@ -5,11 +5,7 @@ public class Calculator {
         System.out.println("Is value in range of ints: " + mult);
     }
 
-    static boolean isInrange(int n) {
-        for (int i = Integer.MIN_VALUE; i < Integer.MAX_VALUE; i++) {
-            if (i == n)
-                return true;
-        }
-        return false;
+    static boolean isInrange(double n) {
+        return n >= Integer.MIN_VALUE && n <= Integer.MAX_VALUE;
     }
 }
